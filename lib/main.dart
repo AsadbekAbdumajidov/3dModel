@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:model3d/views/view_model.dart';
+import 'package:model3d/views/home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       title: 'View 3d Models',
-      home:const ViewModels(),
+      home:const HomePage(),
     );
   }
 }

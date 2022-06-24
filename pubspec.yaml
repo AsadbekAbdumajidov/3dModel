@@ -27,10 +27,9 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/jet/goodNeighbor/
-    - assets/jet/ms_Gundam/
-    - assets/jet/Robo/
-
+    - assets/jet/robo/
+    - assets/jet/Zebra/
+    - assets/jet/house/
   #   - images/a_dot_ham.jpeg
 
   
