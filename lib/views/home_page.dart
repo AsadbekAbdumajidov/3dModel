@@ -50,7 +50,7 @@ class HomePage extends StatelessWidget {
                       padding: const EdgeInsets.symmetric(horizontal: 24),
                       child: InkWell(
                         onTap: () {
-                          Navigator.pushNamed(context, AppRoutes.views,arguments: __);
+                          Navigator.pushNamed(context, AppRoutes.views,arguments:__);
                         },
                         child: Container(
                           decoration: const BoxDecoration(

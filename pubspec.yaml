@@ -16,6 +16,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter_cube: ^0.1.1
   animated_card: ^2.0.0
+  animate_do: ^2.1.0
 
 dev_dependencies:
   flutter_test:
@@ -31,6 +32,27 @@ flutter:
     - assets/jet/robo/
     - assets/jet/Zebra/
     - assets/jet/house/
-  #   - images/a_dot_ham.jpeg
+    - assets/jet/Cow/
+    - assets/jet/littleFish/
+    - assets/jet/littleMan/
+    - assets/jet/car/
+    - assets/jet/policeCar/
+    - assets/jet/ballPark/
+    - assets/jet/spermWhale/
+    - assets/jet/finback/
+    - assets/jet/elephant/
+    - assets/jet/penguin/
+    - assets/jet/penguins/
+    - assets/jet/pepermint/
+    - assets/jet/viking/
+    - assets/jet/wasp/
+    - assets/jet/butterfly/
+    - assets/jet/monkey/
+    - assets/jet/velociRobot/
+    - assets/jet/turtle/
+    - assets/jet/robotAndSnail/
+    - assets/jet/toyRobot/
+    - assets/jet/skunk/
+    - assets/jet/deer/
 
   

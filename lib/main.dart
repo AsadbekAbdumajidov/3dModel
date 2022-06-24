@@ -28,7 +28,7 @@ appMaterial() {
   return MaterialApp(
     debugShowCheckedModeBanner: false,
     title: 'Aion.brend',
-    onGenerateRoute: Routes.instance.generateRoue,
+    onGenerateRoute: RouteGenerate().generate,
     supportedLocales: const [
       Locale('en'),
       Locale('ru'),
