@@ -1,7 +1,3 @@
-class ModelsPath {
-  static final ModelsPath _instance = ModelsPath._inint();
-  static ModelsPath get instance => _instance;
-  ModelsPath._inint();
 List title = [
       "MS Gundam RX-78-2 MG",
       "Zebra",
@@ -30,8 +26,3 @@ List title = [
       "Deer"
     ];
     
-  var robo = "assets/jet/robo/model.obj";
-  var zebra = "assets/jet/Zebra/Zebra.obj";
-  var house = "assets/jet/house/model.obj";
-  var cow = "assets/jet/Cow/Cow.obj";
-}

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:model3d/views/home_page.dart';
+import 'package:flutter/services.dart';
+import 'package:model3d/core/routes/routes.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,14 +11,35 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
-      title: 'View 3d Models',
-      home:const HomePage(),
-    );
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp,
+    ]);
+    return appMaterial();
   }
+}
+
+class MyBehavior extends ScrollBehavior {
+  @override
+  ScrollPhysics getScrollPhysics(BuildContext context) =>
+      const ClampingScrollPhysics();
+}
+
+appMaterial() {
+  return MaterialApp(
+    debugShowCheckedModeBanner: false,
+    title: 'Aion.brend',
+    onGenerateRoute: Routes.instance.generateRoue,
+    supportedLocales: const [
+      Locale('en'),
+      Locale('ru'),
+      Locale('fr'), 
+    ],
+    builder: (context, child) {
+      return ScrollConfiguration(
+        behavior: MyBehavior(),
+        child: child!,
+      );
+    },
+    initialRoute: "/home",
+  );
 }

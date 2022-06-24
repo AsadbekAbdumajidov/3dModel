@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_cube/flutter_cube.dart';
 import 'package:model3d/core/constants/models_path.dart';
+import 'package:model3d/core/widgets/app_bar_widget.dart';
 
 class ViewModels extends StatefulWidget {
   const ViewModels({Key? key}) : super(key: key);
@@ -35,31 +36,9 @@ class _ViewModelsState extends State<ViewModels> {
                 end: Alignment.bottomRight)),
         child: Column(
           children: [
-            const SizedBox(height: 50),
-            const Text(
-              "3D Objects in Flutter",
-              style: TextStyle(
-                  color: Colors.greenAccent,
-                  fontWeight: FontWeight.bold,
-                  fontSize: 25),
-            ),
-            Expanded(
-              flex: 2,
-              child: Cube(
-                onSceneCreated: (Scene scene) {
-                  scene.world.add(robo);
-                  scene.camera.zoom = 5;
-                },
-              ),
-            ),
-            Expanded(
-              flex: 2,
-              child: Cube(
-                onSceneCreated: (Scene scene) {
-                  scene.world.add(house);
-                  scene.camera.zoom = 5;
-                },
-              ),
+            const Padding(
+              padding: EdgeInsets.only(top: 50, bottom: 100),
+              child: AppBarWidget(title: "3D Objects in Flutter"),
             ),
             Expanded(
               flex: 2,
@@ -70,7 +49,6 @@ class _ViewModelsState extends State<ViewModels> {
                 },
               ),
             ),
-            
           ],
         ),
       ),
